@@ -1,5 +1,5 @@
 var weather_URL = 'https://api.openweathermap.org/data/2.5/weather';
-var direction_URL = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAtsQkI9rXQT7kf36Giu_qms_Ksowljab4&callback=initMap';
+var direction_URL = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAtsQkI9rXQT7kf36Giu_qms_Ksowljab4';
 
 function getWeatherData(callback) {
   var query = {
@@ -21,16 +21,6 @@ function getDirectionData(startCity, endCity, callback) {
 function displayWeatherData(data) {
   var result = '';
   console.log(data);
-  // if (data.items) {
-  //   initialPageToken = data.nextPageToken;
-  //   data.items.forEach(function(item) {
-  //     // do things
-  //   });
-  // }
-  // else {
-  //   result += '<p>No results</p>';
-  // }
-  // $('.js-search-results').append('<ul class="js-search-results-page-' + page + '">' + result + '</ul>');
 }
 
 function displayDirectionData(data) {
